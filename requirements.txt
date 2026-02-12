@@ -1,0 +1,15 @@
+pyTelegramBotAPI~=4.30.0
+
+aiogram==3.4.1
+python-dotenv==1.0.1
+
+fastapi
+uvicorn
+sqlalchemy
+psycopg2-binary
+python-jose
+passlib[bcrypt]
+python-dotenv
+aiogram
+requests
+
