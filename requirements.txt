@@ -12,4 +12,4 @@ passlib[bcrypt]
 python-dotenv
 aiogram
 requests
-
+pydantic
