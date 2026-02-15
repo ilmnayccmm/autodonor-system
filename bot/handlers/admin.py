@@ -1,14 +1,14 @@
 from aiogram import Router
 from aiogram.types import Message
 from aiogram.filters import Command
-from bot.config import ADMIN_TG_ID
+from bot.config import ADMIN_ID
 import requests
 from bot.config import API_URL
 
 router = Router()
 
 def is_admin(user_id: int):
-    return user_id == ADMIN_TG_ID
+    return user_id == ADMIN_ID
 
 @router.message(Command("admin"))
 async def admin_panel(msg: Message):

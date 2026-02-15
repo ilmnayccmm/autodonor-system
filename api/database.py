@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 
-DATABASE_URL = "postgresql+psycopg2://postgres:ss2121zz@localhost:5432/telegram_bot_db"
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://telegram_bot_db_6c79_user:7EW7eA0bPimKTthcMpjurzf1Zran4dga@dpg-d6923demcj7s738ibc10-a/telegram_bot_db_6c79")
 
 engine = create_engine(DATABASE_URL, echo=True)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
