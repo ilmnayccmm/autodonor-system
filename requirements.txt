@@ -13,3 +13,5 @@ python-dotenv
 aiogram
 requests
 pydantic
+email-validator
+pydantic[email]==2.5.3
